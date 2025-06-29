@@ -1,6 +1,5 @@
----
-
-```markdown
+```
+markdown
 # 🧠 Ensemble EfficientNet for Image Classification
 
 This project implements an ensemble of EfficientNet models (B3, B4, B5) for improved image classification performance. The ensemble combines the predictions of multiple deep learning models using confidence-based techniques to achieve better generalization and accuracy.
