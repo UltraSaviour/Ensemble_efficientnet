@@ -1,5 +1,3 @@
-Sure! Here's the **entire `README.md` content** in a single copyable block, perfectly formatted for pasting directly into your `README.md` file on GitHub:
-
 ---
 
 ```markdown
