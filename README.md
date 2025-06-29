@@ -81,9 +81,6 @@ Each model is trained (or loaded if pre-trained), and predictions are combined u
 ```
 ensemble_efficientnet/
 ├── ensemble_efficientnet.ipynb     # Main notebook for training and ensemble
-├── utils/                          # Helper functions (optional future structure)
-├── models/                         # Model setup (optional future structure)
-├── output/                         # Output predictions or visualizations
 ├── requirements.txt                # Python dependencies
 └── README.md                       # Project documentation
 ```
