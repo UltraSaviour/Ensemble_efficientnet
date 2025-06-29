@@ -1,36 +1,28 @@
-```
-markdown
 # 🧠 Ensemble EfficientNet for Image Classification
 
 This project implements an ensemble of EfficientNet models (B3, B4, B5) for improved image classification performance. The ensemble combines the predictions of multiple deep learning models using confidence-based techniques to achieve better generalization and accuracy.
 
----
+## 🧑‍💻 Author
 
-## 📌 Key Features
+**GitHub:** [UltraSaviour](https://github.com/UltraSaviour)
 
-- ✅ Ensemble of EfficientNetB3, B4, and B5
-- ✅ Confidence score-based prediction merging
-- ✅ PyTorch-based modular implementation
-- ✅ Easy to adapt to custom datasets
-- ✅ Jupyter Notebook-based workflow for experimentation
+## 📁 Dataset Format
 
----
-
-## 🗂️ Project Structure
+The project expects datasets in the following structure:
 
 ```
+data/
+├── train/
+│   ├── class1/
+│   ├── class2/
+│   └── ...
+└── val/
+    ├── class1/
+    ├── class2/
+    └── ...
+```
 
-ensemble\_efficientnet/
-├── ensemble\_efficientnet.ipynb     # Main notebook for training and ensemble
-├── utils/                          # Helper functions (optional future structure)
-├── models/                         # Model setup (optional future structure)
-├── output/                         # Output predictions or visualizations
-├── requirements.txt                # Python dependencies
-└── README.md                       # Project documentation
-
-````
-
----
+You can modify the `data_dir` in the notebook to point to your dataset.
 
 ## 🚀 Getting Started
 
@@ -39,7 +31,7 @@ ensemble\_efficientnet/
 ```bash
 git clone https://github.com/UltraSaviour/Ensemble_efficientnet.git
 cd Ensemble_efficientnet
-````
+```
 
 ### 2. Set up a virtual environment (optional but recommended)
 
@@ -66,42 +58,32 @@ pip install torch torchvision efficientnet_pytorch matplotlib numpy scikit-learn
 jupyter notebook ensemble_efficientnet.ipynb
 ```
 
----
+## 📌 Key Features
 
-## 📁 Dataset Format
-
-The project expects datasets in the following structure:
-
-```
-data/
-├── train/
-│   ├── class1/
-│   ├── class2/
-│   └── ...
-└── val/
-    ├── class1/
-    ├── class2/
-    └── ...
-```
-
-You can modify the `data_dir` in the notebook to point to your dataset.
-
----
+- ✅ Ensemble of EfficientNetB3, B4, and B5
+- ✅ Confidence score-based prediction merging
+- ✅ PyTorch-based modular implementation
+- ✅ Easy to adapt to custom datasets
+- ✅ Jupyter Notebook-based workflow for experimentation
 
 ## 🧠 Model Overview
 
 This project uses:
 
-* `EfficientNetB3`
-* `EfficientNetB4`
-* `EfficientNetB5`
+- `EfficientNetB3`
+- `EfficientNetB4`
+- `EfficientNetB5`
 
 Each model is trained (or loaded if pre-trained), and predictions are combined using a confidence-aware ensemble strategy.
 
----
+## 🗂️ Project Structure
 
-
-
-## 🧑‍💻 Author
-
-* **GitHub:** [UltraSaviour](https://github.com/UltraSaviour)
+```
+ensemble_efficientnet/
+├── ensemble_efficientnet.ipynb     # Main notebook for training and ensemble
+├── utils/                          # Helper functions (optional future structure)
+├── models/                         # Model setup (optional future structure)
+├── output/                         # Output predictions or visualizations
+├── requirements.txt                # Python dependencies
+└── README.md                       # Project documentation
+```
